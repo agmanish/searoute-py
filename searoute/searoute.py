@@ -103,9 +103,9 @@ def searoute(origin, destination, units='km', speed_knot=24, append_orig_dest=Fa
         shortest_route_by_distance.append(destination )
 
     if append_orig_dest:
-        if (origin != o_origin):
+        if (origin == o_origin):
             shortest_route_by_distance.insert(0, o_origin)
-        if (destination != o_destination):
+        if (destination == o_destination):
             shortest_route_by_distance.append(o_destination)
 
     ls = []
